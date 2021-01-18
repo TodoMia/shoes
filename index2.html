@@ -1,0 +1,770 @@
+<!doctype html>
+<html>
+<head>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>小树精选</title>
+	<meta name="Keywords" content="Pansy日本女鞋子" >
+	<meta name="Description" content="秋冬款短筒雪地靴妈妈鞋加绒保暖短靴女平底靴子" >
+
+	<link type="text/css" rel="stylesheet" href="./css/swiper-3.2.7.min.css" >
+	<link type="text/css" rel="stylesheet" href="./css/picker.css" >
+	<link type="text/css" rel="stylesheet" href="./css/style.css"  />
+	<script type="text/javascript" src="./js/jquery-1.11.0.min.js" ></script>
+	<script type="text/javascript" src="./js/swiper-3.4.0.jquery.min.js" ></script>
+	<script type="text/javascript" src="./js/city.js" ></script>
+	<script type="text/javascript" src="./js/hg-citypicker.js" ></script>
+	<script type="text/javascript" src="./js/jquery.flexslider-min.js" ></script>
+	<script src="./js/vue.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="./js/axios.min.js"></script>
+</head>
+
+<body>
+	<div id="app">
+	
+	<form action="#" method="post" name="orderinfo">
+	
+		<div class="content1">
+			<div class="block_home_slider">
+				<div id="home_slider" class="flexslider">
+					<ul class="slides">
+						<li><div class="slide"><a href=""><img src="./img2/banner4.jpg" /></a></div></li>
+						<li><div class="slide"><a href=""><img src="./img2/banner1.jpg" /></a></div></li>
+						<li><div class="slide"><a href=""><img src="./img2/banner2.jpg" /></a></div></li>
+						<li><div class="slide"><a href=""><img src="./img2/banner3.jpg" /></a></div></li>
+					</ul>
+				</div>
+			</div>
+			<div class="daojishi">
+				距活动结束仅剩
+				<span id="_h">00</span>时
+				<span id="_m">00</span>分
+				<span id="_s">00</span>秒
+				<!-- <span id="_ms">00</span>毫秒 -->
+			</div>
+			<div class="price clearfix">
+				<div class="left clearfix">
+					<div class="nowprice">￥<span>{{commodity.price}}</span></div>
+					<div class="oldprice">原价￥<span>{{commodity.oldprice}}</span></div>
+				</div>
+				<div class="hot right">
+					<img src="./img/icon_qg.png"  />热卖10000+件
+					<!-- <p>距活动结束仅剩</p> -->
+					<!-- <span>{{daojishi}}</span> -->
+					<!-- <span id="_h">00</span>
+					<span id="_m">00</span>
+					<span id="_s">00</span> -->
+				</div>
+			</div>
+			
+			<div class="protitle">{{commodity.name}}</div>
+<!-- 			<div class="cnuo clearfix">
+				<div class="you right">
+					<img src="./img/icon_buycart.png" />
+					限时抢购中...</div>
+			</div> -->
+			
+
+			<div class="service clearfix" id="service">
+				<div class="st">服务</div>
+				<ul class="clearfix">
+					<li><img src="./img/icon_bz.png"/> 假一赔三</li>
+					<li><img src="./img/icon_bz.png"/> 7天退货</li>
+					<li><img src="./img/icon_bz.png"/> 消费者保障服务</li>
+				</ul>
+				<span class="arrow"></span>
+			</div>
+			<div class="stext servicetext">
+				<h3>服务说明</h3>
+				<li>
+					<span><img src="./img/icon_bz_1.png" /> 假一赔三</span>
+					<p>为了保障消费者权益，平台商品支持假一赔三。</p>
+				</li>
+				<li>
+					<span><img src="./img/icon_bz_2.png" /> 7天退货</span>
+					<p>消费者在满足7天无理由退换货申请条件的前提下，可以提出“7天无理由退换货”的申请。</p>
+				</li>
+				<li>
+					<span><img src="./img/icon_bz_3.png" /> 消费者保障服务</span>
+					<p>该商家已缴纳保证金，如有商品质量问题，描述不符等，您有权申请退款或退货。</p>
+				</li>
+				<div class="tip">- 本商品享受上述商家服务 -</div>
+				<div class="textbutton">完成</div>
+			</div>
+			<div class="service canshu clearfix" id="canshu">
+				<div class="st">商品参数</div>
+				<span class="arrow"></span>
+			</div>
+			<div class="stext canshutext">
+				<h3>商品参数</h3>
+				<div class="canshu1">
+					<div class="canshu1text"><span class="c1">商品品牌</span><span class="c2">Pansy</span></div>
+					<div class="canshu1text"><span class="c1">商品名称</span><span class="c2">Pansy日本女鞋子</span></div>
+					<div class="canshu1text"><span class="c1">适用场景</span><span class="c2">日常</span></div>
+					<div class="canshu1text"><span class="c1">适用对象</span><span class="c2">青年（18-40周岁）</span></div>
+					<div class="canshu1text"><span class="c1">帮面</span><span class="c2">绒面（防泼水）</span></div>
+					<div class="canshu1text"><span class="c1">鞋底材质</span><span class="c2">EVA（轻量、防滑）</span></div>
+					<div class="canshu1text"><span class="c1">鞋垫材质</span><span class="c2">仿羊羔绒（保暖、减震）</span></div>
+				</div>
+				<div class="textbutton">完成</div>
+			</div>
+		</div>
+		<div class="shadow"></div>
+		<div id="mao"></div>
+		
+		<div class="content2 container">
+			<div class="swiper-container swiper1">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide selected">商品详情</div>
+					<div class="swiper-slide">咨询与售后</div>
+				</div>
+			</div>
+	
+			<div class="swiper-container swiper2" id="swiper2">
+				<div class="swiper-wrapper xia">
+					<div class="swiper-slide swiper-no-swiping">
+						<div class="xqt"><span>商品参数</span></div>
+						<div class="canshu1">
+							<div class="canshu1text"><span class="c1">商品品牌</span><span class="c2">Pansy</span></div>
+							<div class="canshu1text"><span class="c1">商品名称</span><span class="c2">Pansy日本女鞋子</span></div>
+							<div class="canshu1text"><span class="c1">适用场景</span><span class="c2">日常</span></div>
+							<div class="canshu1text"><span class="c1">适用对象</span><span class="c2">青年（18-40周岁）</span></div>
+							<div class="canshu1text"><span class="c1">帮面</span><span class="c2">绒面（防泼水）</span></div>
+							<div class="canshu1text"><span class="c1">鞋底材质</span><span class="c2">EVA（轻量、防滑）</span></div>
+							<div class="canshu1text"><span class="c1">鞋垫材质</span><span class="c2">仿羊羔绒（保暖、减震）</span></div>
+						</div>
+						<div class="xqt"><span>图文详情</span></div>
+						<div class="detailpic">
+								<!-- <p><img src="./img2/xq1.jpg" title="xq1.jpg" _src="xq1.jpg" alt="image.png"/></p> -->
+								<p><img src="./img2/xq2.jpg" title="xq2.jpg" _src="xq2.jpg" alt="image.jpg"/></p>
+								<p><img src="./img2/xq3.jpg" title="xq3.jpg" _src="xq3.jpg" alt="image.jpg"/></p>
+								<p><img src="./img2/xq4.jpg" title="xq4.jpg" _src="xq4.jpg" alt="image.jpg"/></p>
+								<p><img src="./img2/xq5.jpg" title="xq5.jpg" _src="xq5.jpg" alt="image.jpg"/></p>
+								<p><img src="./img2/xq6.jpg" title="xq6.jpg" _src="xq6.jpg" alt="image.jpg"/></p>
+								<p><img src="./img2/xq7.jpg" title="xq7.jpg" _src="xq7.jpg" alt="image.jpg"/></p>
+								<p><img src="./img2/xq8.jpg" title="xq8.jpg" _src="xq8.jpg" alt="image.jpg"/></p>
+								<p><img src="./img2/xq9.jpg" title="xq9.jpg" _src="xq9.jpg" alt="image.jpg"/></p>
+								<p><img src="./img2/xq10.jpg" title="xq10.jpg" _src="xq10.jpg" alt="image.jpg"/></p>
+								<p><img src="./img2/xq11.jpg" title="xq11.jpg" _src="xq11.jpg" alt="image.jpg"/></p>
+								<p><img src="./img2/xq12.jpg" title="xq12.jpg" _src="xq12.jpg" alt="image.jpg"/></p>
+								<p><img src="./img2/xq13.jpg" title="xq13.jpg" _src="xq13.jpg" alt="image.jpg"/></p>
+								<p><img src="./img2/xq14.jpg" title="xq14.jpg" _src="xq14.jpg" alt="image.jpg"/></p>
+								<p><img src="./img2/xq15.jpg" title="xq15.jpg" _src="xq15.jpg" alt="image.jpg"/></p>
+								<p><img src="./img2/xq16.jpg" title="xq16.jpg" _src="xq16.jpg" alt="image.jpg"/></p>
+								<p><img src="./img2/xq17.jpg" title="xq17.jpg" _src="xq16.jpg" alt="image.jpg"/></p>
+								<p><br/></p>
+							</div>
+					</div>
+					<div class="swiper-slide swiper-no-swiping">
+						<ul class="as_service">
+							<li>
+								<span>我的订单大概多久发货？</span>
+								<span class="arrow"></span>
+								<div class="text">
+	<p>订单的发货时间为您下单之后的72小时内，请您耐心等待。订单状态及物流运转进度可在订单详情中查看，普通地区异地物流运转时间3-5天左右，偏远地区异地物流运转时间5-7天左右，如遇特殊情况将会导致延误，以物流官网进度为准。
+	若您的订单超出72小时仍未发货，建议您联系商家进行咨询。</p>
+								</div>
+							</li>
+							<li>
+								<span>我的订单如何申请换货?</span>
+								<span class="arrow"></span>
+								<div class="text">
+	<p>若您需办理换货，无需对订单进行任何操作，请您及时联系商家协商换货事宜，向商家索取商品寄回地址信息，将商品寄回至商家处，并向商家提供商品寄回有效物流单号，由商家为您安排换货。</p>
+	<p>换货要求：保证商品全新，不影响二次销售，商品包装完好，附件、赠品齐全。在寄回包裹中放置小纸条注明您的联系方式、订单号，禁止使用“到付”运费支付形式将商品寄回。</p>
+								</div>
+							</li>
+							<li>
+								<span>价格说明</span>
+								<span class="arrow"></span>
+								<div class="text">
+	<p>划线价格：指商品的专柜价，吊牌价，正品零售价，厂商指导价或该商品曾经展示的售卖价，并非原价，仅供参考。</p>
+	<p>未划线价格：指商品的实时标价，不因表述的差异改变性质。具体成交价格根据商品参加活动或者会员试用优惠券、积分等发生变化，最终以订单结算价格为准。</p>
+								</div>
+							</li>
+							<li>
+								<span>咨询与售后</span>
+								<span class="arrow"></span>
+								<div class="text">
+									<p>电话咨询：15366635788</p>
+									<p>
+										在线咨询：扫码关注“数稔卡服”公众号
+										<img width="100%" src="img/gzh.jpg" >
+									</p>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 订单信息 -->
+		<div class="content3 orderdetail" id="orderdetail">
+			<h1>订单信息</h1>
+			<div class="orderinfo p4 clearfix">
+				<div class="pic left">
+					<img src="./img2/banner1.jpg" >
+					<input type="hidden" name="procolor" id="procolor1" value="/d/file/2.png" />
+				</div>
+				<div class="text right">
+					<div class="t1">{{commodity.name}}</div>
+					<div class="t2"></div>
+					<div class="t3">￥<span>{{commodity.price}}</span></div>
+					<input type="hidden" name="price" id="price" value="299" />
+				</div>
+			</div>
+
+			<div class="buyinfo p4 clearfix">
+				<li><span>规格</span><span id="guige">{{color}},{{size}}码,{{number}}双</span>
+				<li><span>收货人</span><span><input v-model="name" type="text" name="name" id="name" placeholder="请输入收货人姓名" /></span></li>
+				<li><span>联系方式</span><span><input v-model="mycall" type="text" name="mycall" id="mycall" placeholder="11位手机号码" /></span></li>
+				<!-- <li><span>验证码</span><span><input type="text" name="callcode" id="callcode" placeholder="请输入验证码" /> -->
+				<!-- <input type="button" value="获取手机验证码" id="sendcode" onclick="javascript:get_code();" /></span></li> -->
+				<li><span>所在地区</span><span id="cityarea1" @click="select(1)">请选择</span>
+				<input type="hidden" name="cityarea" id="cityarea2" value="" /></li>
+				<li><span>详细地址</span><span><input type="text" v-model="address" name="address" id="address" placeholder="如街道、小区门牌等详细地址" /></span></li>
+			</div>
+			<!-- 规格文本框 -->
+			<div class="stext guigetext">
+				<div class="guige_title">
+					<img id="guige_img" :src="colorimg" alt="">
+					<div class="guige_title_p">
+						<h4>￥299</h4>
+						<p>库存55件</p>
+					</div>
+				</div>
+				<div class="guige_list">
+					<p>颜色分类</p>
+					<div class="guige_color" >
+						<span v-for="(item,index) in commodity.color" @click="color = item.colorname;  colorimg=item.colorimg "  :class="{active : color == item.colorname}">{{item.colorname}}</span>
+						<!-- <span @click="color = '驼色Camel';  colorimg='./img/3.jpg' "  :class="{active : color == '驼色Camel'}">驼色Camel</span>
+						<span @click="color = '军绿Khaki';  colorimg='./img/4.jpg' "  :class="{active : color == '军绿Khaki'}">军绿Khaki</span>
+						<span @click="color = '黑色Black';  colorimg='./img/5.jpg' "  :class="{active : color == '黑色Black'}">黑色Black</span> -->
+					</div>
+				</div>
+				<div class="guige_list">
+					<p>尺码</p>
+					<div class="guige_size">
+						<span v-for="(item,index) in commodity.size" @click=" size=item "  :class="{active : size == item}">{{item}}</span>
+						<!-- <span @click=" size='35' "  :class="{active : size == '35'}">35</span>
+						<span @click=" size='36' "  :class="{active : size == '36'}">36</span>
+						<span @click=" size='37' "  :class="{active : size == '37'}">37</span> -->
+					</div>
+				</div>
+				<div class="buynum p4 clearfix">
+					<font>购买数量</font>
+					<div class="numinput">
+						<input type="button" @click.passive='jian' value="-" id="jian">
+						<input type="text" disabled v-model="number" id="buynum" name="buynum">
+						<input type="button" @click.passive='jia'	value="+" id="jia">
+					</div>
+				</div>
+				<div class="guigebutton">确定</div>
+			</div>
+			<!-- 规格文本框 -->
+			<div class="payway p4">
+				<font>支付方式</font>
+				<div class="zf_type">
+					<img src="./img/icon_fk.png" />货到付款
+					<img src="./img/icon_g.png"  class="g" />
+					<input type="hidden" value="货到付款" name="payway" />
+				</div>
+				<!-- <div class="zf_type">
+					<img src="./img/icon_izfb.png" />支付宝
+					<img src="./img/icon_no.png"  class="g" />
+					<input type="hidden" value="货到付款" name="payway" />
+				</div>
+				<div class="zf_type">
+					<img src="./img/icon_iwx.png" />微信
+					<img src="./img/icon_no.png"  class="g" />
+					<input type="hidden" value="货到付款" name="payway" />
+				</div> -->
+			</div>
+			<div class="freight p4">
+				<font>运费<span>包邮</span></font>
+				<input type="hidden" value="包邮" name="freight" />
+			</div>
+			<div class="payprice p4">
+				<font>实付款</font>
+				<span class="span1"></span>
+				<span class="arrow"></span>
+				<span class="span2">￥{{total}}</span>
+				<input type="hidden" value="" name="payprice" id="payprice" />
+			</div>
+			<div class="message p4">
+				<font>买家留言</font><span><input type="text" v-model="liuyan" name="lytext" placeholder="选填：对快递等的特殊要求" /></span>
+			</div>
+			<div class="cr">
+				<input type="checkbox" checked name="xieyi" id="xieyi" value="xieyi">
+				我已阅读同意<a class="yinsi">《用户协议与隐私政策》</a>
+			</div>
+			<div class="tjbutton p4">
+				<!-- <input type="submit" class="tj" @click.passive='tijiao' value="立即抢购"> -->
+				<p class="tj" @click='tijiao'>立即抢购</p>
+			</div>
+		</div>
+		<div class="cr"></div>
+		<div class="bottom clearfix">
+			<div class="left"><a href="tel:15366635788"><img src="./img/icon_kf.png"/>电话咨询</a></div>
+			<div class="right">立即抢购</div>
+		</div>
+	
+	
+			<div class="stext yinsitext">
+				<h3>用户协议与隐私政策</h3>
+				<div class="canshu1">
+	<p style="text-indent:28px;line-height:150%">
+		<span style="font-family:微软雅黑;line-height:150%;font-size:14px">
+			<span style="font-family:微软雅黑">感谢您选择苏州玄小数信息科技有限公司！（以下简称本司）</span></span>
+		</p><p style="text-indent:28px;line-height:150%"><span style="font-family:微软雅黑;line-height:150%;font-size:14px">
+			<span style="font-family:微软雅黑">本司非常重视用户的隐私和个人信息保护。您在使用开启、浏览我们的产品和服务时，我们可能会收集和使用您的相关信息。
+				我们希望通过本《隐私权保护政策》（以下简称</span>“本政策”或“隐私政策”）向您说明在您接受我们的产品服务时，我们如何收集、使用、储存、共享和转让这些信息，
+				以及我们为您提供的访问、更新、控制和保护这些信息的方式。我们深知个人信息对您的重要性，并会尽全力保护您的个人信息安全可靠。我们致力于维持您对我们的信任，
+				恪守以下原则，保护您的个人信息；在您使用我们的产品前，请务必谨慎阅读《用户协议和隐私权政策》内的所有条款，尤其是：</span></p>
+				<p style="text-indent:28px;line-height:150%"><span style="font-family:微软雅黑;line-height:150%;font-size:14px">1.我们对您的个人信息的收集/使用/保护等规则条款，
+					以及您的用户权利等条款；</span></p><p style="text-indent:28px;line-height:150%"><span style="font-family:微软雅黑;line-height:150%;font-size:14px">
+						2.约定我们的限制责任、免责条款；</span></p><p style="text-indent:28px;line-height:150%">
+							<span style="font-family:微软雅黑;line-height:150%;font-size:14px"><span style="font-family:微软雅黑">您点击</span>
+							“同意并继续”的行为即表示您已阅读完毕并同意以上协议的全部内容。如您同意以上协议内容，请点击“同意并继续”，开始使用我们的产品和服务！</span></p>
+							<p style="text-indent:28px;line-height:150%"><span style="font-family:微软雅黑;line-height:150%;font-size:14px">&nbsp;</span></p>
+							<p style="text-indent:28px;line-height:150%"><span style="font-family:微软雅黑;line-height:150%;font-size:14px">&nbsp;</span></p>
+							<p style="margin-left:0;text-indent:28px;line-height:150%"><span style="font-family:微软雅黑;font-size:14px;background:rgb(255,255,255)">
+								一、
+							</span><span style="font-family:微软雅黑;font-size:14px;background:rgb(255,255,255)"><span style="font-family:微软雅黑">保护用户隐私权</span></span>
+							<span style="font-family:微软雅黑;font-size:14px"><br/></span><span style="font-family:微软雅黑;font-size:14px">&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="font-family:微软雅黑;font-size:14px;background:rgb(255,255,255)"><span style="font-family:微软雅黑">在您使用本司服务、参加网站活动、或访问网站网页时，网站自动接收并记录的您浏览器上的服务器数据，及您要求取用的网页记录；本司承诺不公开或透露您的密码、手机号码等在本站的非公开信息。</span></span></p><p style="margin-left:0;text-indent:28px;line-height:150%"><span style="font-family:微软雅黑;font-size:14px;background:rgb(255,255,255)">二、</span><span style="font-family:微软雅黑;font-size:14px;background:rgb(255,255,255)"><span style="font-family:微软雅黑">为服务用户的目的，本司可能通过使用您的个人信息，向您提供服务，包括但不限于向您发出活动和服务信息等。</span></span><span style="font-family:微软雅黑;font-size:14px"><br/></span><span style="font-family:微软雅黑;font-size:14px;background:rgb(255,255,255)"><span style="font-family:微软雅黑">　　同时用户须做到：</span></span><span style="font-family:微软雅黑;font-size:14px"><br/></span><span style="font-family:微软雅黑;font-size:14px;background:rgb(255,255,255)">　　● 用户名和昵称的注册与使用应符合网络道德，遵守中华人民共和国的相关法律法规。</span><span style="font-family:微软雅黑;font-size:14px"><br/></span><span style="font-family:微软雅黑;font-size:14px;background:rgb(255,255,255)">　　● 用户名和昵称中不能含有威胁、淫秽、漫骂、非法、侵害他人权益等有争议性的文字。</span><span style="font-family:微软雅黑;font-size:14px"><br/></span><span style="font-family:微软雅黑;font-size:14px;background:rgb(255,255,255)">　　● 注册成功后，用户必须保护好自己的帐号和密码，因用户本人泄露而造成的任何损失由用户本人负责。</span><span style="font-family:微软雅黑;font-size:14px"><br/></span><span style="font-family:微软雅黑;font-size:14px;background:rgb(255,255,255)">　　● 不得盗用他人帐号，由此行为造成的后果自负。</span><span style="font-family:微软雅黑;font-size:14px"><br/></span><span style="font-family:微软雅黑;font-size:14px;background:rgb(255,255,255)"><span style="font-family:微软雅黑">　　您的个人信息将在下述情况下部分或全部被披露：</span></span><span style="font-family:微软雅黑;font-size:14px"><br/></span><span style="font-family:微软雅黑;font-size:14px;background:rgb(255,255,255)">　　● 经您同意，向第三方披露；</span><span style="font-family:微软雅黑;font-size:14px"><br/></span><span style="font-family:微软雅黑;font-size:14px;background:rgb(255,255,255)">　　● 如您是合资格的知识产权投诉人并已提起投诉，应被投诉人要求，向被投诉人披露，以便双方处理可能的权利纠纷；</span><span style="font-family:微软雅黑;font-size:14px"><br/></span><span style="font-family:微软雅黑;font-size:14px;background:rgb(255,255,255)">　　● 根据法律的有关规定，或者行政或司法机构的要求，向第三方或者行政、司法机构披露；</span><span style="font-family:微软雅黑;font-size:14px"><br/></span><span style="font-family:微软雅黑;font-size:14px;background:rgb(255,255,255)">　　● 如果您出现违反中国有关法律或者网站政策的情况，需要向第三方披露；</span><span style="font-family:微软雅黑;font-size:14px"><br/></span><span style="font-family:微软雅黑;font-size:14px;background:rgb(255,255,255)">　　● 为提供你所要求的产品和服务，而必须和第三方分享您的个人信息；</span><span style="font-family:微软雅黑;font-size:14px"><br/></span><span style="font-family:微软雅黑;font-size:14px;background:rgb(255,255,255)">　　● 其他本网站根据法律或者网站政策认为合适的披露</span></p><p style="text-indent:28px;line-height:150%"><span style="font-family:微软雅黑;line-height:150%;font-size:14px;background:rgb(255,255,255)"><span style="font-family:微软雅黑">　三、责任说明</span></span><span style="font-family:微软雅黑;line-height:150%;font-size:14px"><br/></span><span style="font-family:微软雅黑;line-height:150%;font-size:14px;background:rgb(255,255,255)"><span style="font-family:微软雅黑">　　基于技术和不可预见的原因而导致的服务中断，或者因用户的非法操作而造成的损失，</span>“本司”不负责任。用户应当自行承担一切因自身行为而直接或者间接导致的民事或刑事法律责任。</span><span style="font-family:微软雅黑;line-height:150%;font-size:14px"><br/></span><span style="font-family:微软雅黑;line-height:150%;font-size:14px;background:rgb(255,255,255)"><span style="font-family:微软雅黑">　　四、用户必须做到：</span></span><span style="font-family:微软雅黑;line-height:150%;font-size:14px"><br/></span><span style="font-family:微软雅黑;line-height:150%;font-size:14px;background:rgb(255,255,255)">　　1、不得利用本站危害国家安全、泄露国家秘密，不得侵犯国家社会集体的和公民的合法权益，不得利用本站制作、复制和传播下列信息：</span><span style="font-family:微软雅黑;line-height:150%;font-size:14px"><br/></span><span style="font-family:微软雅黑;line-height:150%;font-size:14px;background:rgb(255,255,255)"><span style="font-family:微软雅黑">　　（</span>1）煽动抗拒、破坏宪法和法律、行政法规实施的；</span><span style="font-family:微软雅黑;line-height:150%;font-size:14px"><br/></span><span style="font-family:微软雅黑;line-height:150%;font-size:14px;background:rgb(255,255,255)"><span style="font-family:微软雅黑">　　（</span>2）煽动颠覆国家政权，推翻社会主义制度的；</span><span style="font-family:微软雅黑;line-height:150%;font-size:14px"><br/></span><span style="font-family:微软雅黑;line-height:150%;font-size:14px;background:rgb(255,255,255)"><span style="font-family:微软雅黑">　　（</span>3）煽动分裂国家、破坏国家统一的；</span><span style="font-family:微软雅黑;line-height:150%;font-size:14px"><br/></span><span style="font-family:微软雅黑;line-height:150%;font-size:14px;background:rgb(255,255,255)"><span style="font-family:微软雅黑">　　（</span>4）煽动民族仇恨、民族歧视，破坏民族团结的；</span><span style="font-family:微软雅黑;line-height:150%;font-size:14px"><br/></span><span style="font-family:微软雅黑;line-height:150%;font-size:14px;background:rgb(255,255,255)"><span style="font-family:微软雅黑">　　（</span>5）捏造或者歪曲事实，散布谣言，扰乱社会秩序的；</span><span style="font-family:微软雅黑;line-height:150%;font-size:14px"><br/></span><span style="font-family:微软雅黑;line-height:150%;font-size:14px;background:rgb(255,255,255)"><span style="font-family:微软雅黑">　　（</span>6）宣扬封建迷信、淫秽、色情、赌博、暴力、凶杀、恐怖、教唆犯罪的；</span><span style="font-family:微软雅黑;line-height:150%;font-size:14px"><br/></span><span style="font-family:微软雅黑;line-height:150%;font-size:14px;background:rgb(255,255,255)"><span style="font-family:微软雅黑">　　（</span>7）公然侮辱他人或者捏造事实诽谤他人的，或者进行其他恶意攻击的；</span><span style="font-family:微软雅黑;line-height:150%;font-size:14px"><br/></span><span style="font-family:微软雅黑;line-height:150%;font-size:14px;background:rgb(255,255,255)"><span style="font-family:微软雅黑">　　（</span>8）损害国家机关信誉的；</span><span style="font-family:微软雅黑;line-height:150%;font-size:14px"><br/></span><span style="font-family:微软雅黑;line-height:150%;font-size:14px;background:rgb(255,255,255)"><span style="font-family:微软雅黑">　　（</span>9）其他违反宪法和法律行政法规的；</span><span style="font-family:微软雅黑;line-height:150%;font-size:14px"><br/></span><span style="font-family:微软雅黑;line-height:150%;font-size:14px;background:rgb(255,255,255)"><span style="font-family:微软雅黑">　　（</span>10）进行商业广告行为的。</span><span style="font-family:微软雅黑;line-height:150%;font-size:14px"><br/></span><span style="font-family:微软雅黑;line-height:150%;font-size:14px;background:rgb(255,255,255)">　　2、未经本站的授权或许可，任何用户不得借用本站的名义从事任何商业活动，也不得将本站作为从事商业活动的场所、平台或其他任何形式的媒介。禁止将本站用作从事各种非法活动的场所、平台或者其他任何形式的媒介。违反者若触犯法律，一切后果自负，本站不承担任何责任。</span><span style="font-family:微软雅黑;line-height:150%;font-size:14px"><br/></span><span style="font-family:微软雅黑;line-height:150%;font-size:14px"><br/></span><span style="font-family:微软雅黑;line-height:150%;font-size:14px;background:rgb(255,255,255)"><span style="font-family:微软雅黑">　　　五、免责声明：</span></span><span style="font-family:微软雅黑;line-height:150%;font-size:14px"><br/></span><span style="font-family:微软雅黑;line-height:150%;font-size:14px;background:rgb(255,255,255)">　　● 本司对于任何包含、经由或连接、下载或从任何与有关本网站所获得的任何内容、信息或广告，不声明或保证其正确性或可靠性；并且对于用户经本网站上的内容、广告、展示而购买、取得的任何产品、信息或资料，本司不负保证责任。用户自行负担使用本网站的风险。</span></p><p><br/></p>			</div>
+				<div class="textbutton">完成</div>
+			</div>
+	</form>
+	
+	<div class="bigpic">
+		<div class="success">
+			<div class="img">
+				<img src="./img/icon_g.png" alt="">
+				<h4>购买成功</h4>
+				<p>您的订单已提交</p>
+				<p>稍后会有客服联系您</p>
+			</div>
+			<div class="btn">
+				<span class="fanh">返回</span>
+				<span class="qued">确定</span>
+			</div>
+		</div>
+	</div>			
+	</div>
+
+	<script>
+		$(function() {
+			// console.log($("#mao").offset().top)
+			// $("#dian").on("click",function(){
+			// 	var h=$("#mao").offset().top;
+			// 	$("html,body").animate({"scrollTop":h},1000)
+			// })
+			countTime()
+			$('.procolor input').click(function(){
+				picvalue = $(this).attr('picvalue');
+				$('.orderinfo .pic img').attr("src", picvalue);
+			})
+			
+			$('#home_slider').flexslider({
+				animation : 'slide',
+				controlNav : false,
+				directionNav : false,
+				animationLoop : true,
+				slideshow : true,
+				slideshowSpeed: 2000,
+				useCSS : false
+			});
+			
+			function setCurrentSlide(ele, index) {
+				$(".swiper1 .swiper-slide").removeClass("selected");
+				ele.addClass("selected");
+			}
+
+			var swiper1 = new Swiper('.swiper1', {
+				slidesPerView: 2,
+				paginationClickable: true,
+				spaceBetween: 0,
+				freeMode: true,
+				loop: false,
+				onTab: function(swiper) {
+					var n = swiper1.clickedIndex;
+				}
+			});
+
+			swiper1.slides.each(function(index, val) {
+				var ele = $(this);
+				ele.on("click", function() {
+					setCurrentSlide(ele, index);
+					swiper2.slideTo(index, 500, false);
+					var h=$("#mao").offset().top;
+					$("html,body").animate({"scrollTop":h},1)
+					//mySwiper.initialSlide=index;
+				});
+			});
+
+			var swiper2 = new Swiper('.swiper2', {
+				direction: 'horizontal',
+				loop: false,
+				autoHeight: true,
+				onSlideChangeEnd: function(swiper) {
+					var n = swiper.activeIndex;
+					setCurrentSlide($(".swiper1 .swiper-slide").eq(n), n);
+					swiper1.slideTo(n, 500, false);
+				}
+			});
+
+			$(window).scroll(function(){
+
+				var a = $("#orderdetail").offset().top;
+				if($(this).scrollTop() > a && $(this).scrollTop() < a + $("#orderdetail").outerHeight(true) - 52){
+					$(".bottom").hide();
+				} else {
+					$(".bottom").show();
+				}
+				var b = $(".container").offset().top;
+				if($(this).scrollTop() > b && $(this).scrollTop() < b + $(".container").outerHeight(true) - 52){
+					$('.swiper1').css({"position":"fixed","top":"0"});
+					$('.container').css({"padding-top":"52px"});
+				} else {
+					$('.swiper1').css({"position":"relative","top":"auto"});
+					$('.container').css({"padding-top":"0"});
+				}
+				var od = $(".orderdetail").offset().top+66;
+				if($(this).scrollTop() > od && $(this).scrollTop() < od + $(".orderdetail").outerHeight(true)){
+					$('.orderinfo').css({"position":"fixed","top":"0","box-shadow":"0 0 5px 0 rgba(0,0,0,.2)"});
+					$('.orderdetail').css({"padding-top":"100px"});
+				} else {
+					$('.orderinfo').css({"position":"relative","top":"auto","box-shadow":"none"});
+					$('.orderdetail').css({"padding-top":"0"});
+				}
+			})
+
+
+			$('.cnuo .you').click(function(){
+				$('html,body').animate({ scrollTop: $("#orderdetail").offset().top + 6 }, 500);
+			});
+
+			$('.bottom .right').click(function(){
+				$('html,body').animate({ scrollTop: $("#orderdetail").offset().top + 6 }, 500);
+			});
+
+			$('.as_service li').click(function(){
+				if($(this).hasClass('this')){
+					$(this).find('.text').css({"position":"absolute","top":"56px","display":"none"});
+					var c = $(this).find('.text').height();
+					var d = $('.xia').height() - c;
+					$('.xia').css({"height": d });
+					$(this).removeClass('this');
+				}else{
+					$(this).find('.text').css({"position":"relative","opacity":"1","top":"auto","display":"block"});
+					var c = $(this).find('.text').height();
+					var d = $('.xia').height() + c;
+					$('.xia').css({"height": d });
+					$(this).addClass('this');
+				}
+
+			})
+
+			procolor = $('input[name="procolor"]:checked').val();
+			
+			var textheight = $('.servicetext').outerHeight(true);
+			
+			$('#service').click(function(){
+				$('.shadow').fadeIn();
+				$('.servicetext').animate({bottom: '0'},300);
+			});
+			$('.shadow').click(function(){
+				$('.shadow').fadeOut();
+				$('.servicetext').animate({bottom: -textheight},300);
+			});
+			
+			$('#canshu').click(function(){
+				$('.shadow').fadeIn();
+				$('.canshutext').animate({bottom: '0'},300);
+			});
+			$('.shadow').click(function(){
+				$('.shadow').fadeOut();
+				$('.canshutext').animate({bottom: -textheight},300);
+			});
+			$('.yinsi').click(function(){
+				$('.shadow').fadeOut();
+				$('.yinsitext').animate({bottom: 0},300);
+			});
+			
+			$('.textbutton').click(function(){
+				$('.shadow').fadeOut();
+				$('.stext').animate({bottom: -textheight},300);
+			});
+
+			$('#guige').click(function(){
+				$('.shadow').fadeIn();
+				$('.guigetext').animate({bottom: '0'},300);
+			});
+			$('.shadow').click(function(){
+				$('.shadow').fadeOut();
+				$('.guigetext').animate({bottom: -textheight},300);
+			});
+
+			$('.qued').click(function(){
+				$('.bigpic').fadeOut();
+				$('.guigetext').animate({bottom: -textheight},300);
+			});
+			$('.fanh').click(function(){
+				$('.bigpic').fadeOut();
+				$('.guigetext').animate({bottom: -textheight},300);
+			});
+			// 成功
+
+			$('.guigebutton').click(function(){
+				$('.shadow').fadeOut();
+				$('.stext').animate({bottom: -textheight},300);
+				// console.log(color)
+				// $('#guige').html(color+","+size+"码,"+buynum+"双");
+			});
+
+			
+		});
+
+		
+
+
+		$(".procolor input").attr("onclick", "mathPrice1()");
+		$(".prosize  input").attr("onclick", "mathPrice2()");
+
+		var procolor;
+		var prosize;
+		var price = $('#price').val();		//获取单价
+		var buynum = $('#buynum').val();	//获取数量
+		function mathPrice1() {
+			//获取checked项的value值
+			procolor = $('.procolor input:radio:checked').val();
+			//总价格
+			if( procolor && prosize ){
+				var allPrice = price * buynum;
+				$(".span2").html('￥'+allPrice);
+				$("#payprice").val('￥'+allPrice);
+			}
+		}
+		function mathPrice2() {
+			//获取checked项的value值
+			prosize = $('.prosize input:radio:checked').val();
+			//总价格
+			if( procolor && prosize ){
+				var allPrice = price * buynum;
+				$(".span2").html('￥'+allPrice);
+				$("#payprice").val('￥'+allPrice);
+			}
+		}
+
+		// 倒计时
+		function countTime() {
+            var date = new Date();
+			var now = date.getTime();
+			var str=new Date().setHours(0, 0, 0, 0)+24*60*60*1000;
+			var endDate = new Date(str);
+			var end = endDate.getTime();
+            var leftTime = end-now;
+            var d,h,m,s;
+            if (leftTime>=0) {
+                h = Math.floor(leftTime/1000/60/60%24);
+                m = Math.floor(leftTime/1000/60%60);
+                s = Math.floor(leftTime/1000%60);
+                // ms = Math.floor(leftTime%100);
+            }
+            document.getElementById("_h").innerHTML = h+"";
+            document.getElementById("_m").innerHTML = m+"";
+            document.getElementById("_s").innerHTML = s+"";
+            // document.getElementById("_ms").innerHTML = ms+"";
+            setTimeout(countTime,1000);
+        }
+
+
+		// 函数节流
+		function throttle(fn,delay){
+			var lasttime = 0 ;
+			return function(){
+				var nowtime = Date.now();
+				if(nowtime-lasttime>delay){
+					fn.call(this);
+					lasttime = nowtime;
+				}
+			}
+		}
+	</script>
+	<script type="text/javascript">
+		new Vue({
+			el:'#app',
+			data:{
+				commodity:{
+					name: 'Pansy日系冬款女鞋棉鞋短靴子雪地靴加绒加厚保暖侧拉链 侧拉链易穿脱 保暖防滑',
+					price: 299,
+					oldprice:439,
+					color: [
+						{
+							colorname:'黑色',
+							colorimg:'./img2/banner1.jpg'
+						},
+						{
+							colorname:'棕色',
+							colorimg:'./img2/banner2.jpg'
+						},
+						{
+							colorname:'灰色',
+							colorimg:'./img2/banner3.jpg'
+						}
+					],
+					size: ['35','36','37','38','39']
+				},
+				color:'黑色',
+				colorimg:'./img2/banner1.jpg',
+				size:'36',
+				number:1,
+				total: 299,
+				name:'',
+				mycall:'',
+				cityarea:'',
+				address:'',
+				shortid:'',
+				liuyan:''
+			},
+			created: function(){
+				if(localStorage.getItem("long_urllocal2") == '' || localStorage.getItem("long_urllocal2") == null){
+					var long_url = window.location.href;
+					console.log(long_url)
+					const postdata={
+						"long_url":long_url,
+						// "short_url":'v0x.cn/1Z',
+						"good_id":"1002"
+					}
+					url="http://139.196.23.101:10085/api/v1/findimformationbyshortid"
+					// url="http://139.196.23.101:10085/api/v1/createorder"
+					axios.post(url,postdata)
+					.then(res => {
+						console.log(res)
+						localStorage.setItem("long_urllocal2",res.data.id);
+					})
+					.catch(err => {
+						console.error(err);
+					})
+				}
+			},
+			methods:{
+				select() {
+					_this=this;
+					
+					var picker = new CityPicker({
+						data: city,
+						cancel: function () {
+							console.log('取消城市选择');
+						},
+						onOk: function(arr) {
+							_this.cityarea='';
+							// console.log(arr);
+							var arr2 = [];
+							arr.forEach(function(val) {
+								arr2.push(val.value);
+								_this.cityarea=_this.cityarea+val.value+','
+							});
+							// _this.cityarea=arr2;
+							// console.log(_this.cityarea);
+							document.getElementById('cityarea1').innerHTML = arr2;
+							document.getElementById('cityarea2').value = arr2;
+						}
+					});
+					picker.set({
+						title: '请选择所在地区'
+					});
+					picker.show()
+					// console.log(_this.cityarea);
+				},
+				jian(){
+					if(this.number==1){
+						alert("已经最少了，不能再减了！");
+					}else{
+						this.number=this.number-1;
+						this.total=(this.number)*(this.commodity.price);
+					}
+				},
+				jia(){
+					this.number=this.number+1;
+					// this.total=this.number*this.commodity.prrice;
+					this.total=parseInt(this.number)*parseInt(this.commodity.price);
+
+				},
+				tijiao: throttle(function() {
+					// console.log(this.cityarea)
+					
+					if (this.name.replace(/\s*/g,"") == '') {
+						alert('请填写收货人姓名！');
+						$('#name').focus();
+						return;
+					}
+					if (this.mycall.replace(/\s*/g,"") == '') {
+						alert('请填写收货人联系方式！');
+						$('#mycall').focus();
+						return;
+					}
+					if (this.cityarea == '') {
+						alert('请选择所在地区！');
+						document.add.cityarea.focus();
+						$('#cityarea1').focus();
+						return false;
+					}
+					if( this.address.replace(/\s*/g,"") == ''){
+						alert('请填写详细地址!');
+						$('#cityarea2').focus();
+						return;
+					}
+					var goodslist=[]
+					goodsattr={
+						"id": 1,
+						"order_id": '1',
+						"good_id": '1002',
+						"good_name": this.commodity.name,
+						"good_color": this.color,
+						"good_type": this.size,
+						"good_money": this.commodity.price,
+						"good_count": '1',
+						"remarks": this.liuyan
+					};
+					for(i=0;i<this.number;i++){
+						goodslist.push(goodsattr);
+					}
+					// console.log(goodslist)
+					const postdata={
+						orderdetails: goodslist,
+						"order_id": '1',
+						"click_id": this.shortid,
+						"order_status": '1',
+						"goods_money": this.commodity.price,
+						"total_money": this.total,
+						"consignee_realname": this.name,
+						"consignee_telphone": this.mycall,
+						"consignee_address": this.address,
+						"area": this.cityarea,
+						"create_date":''
+					}
+					// console.log(postdata)
+					// url="http://127.0.0.1:10098/api/v1/createorder"
+					url="http://139.196.23.101:10085/api/v1/createorder"
+					axios.post(url,postdata)
+					.then(res => {
+						console.log(res)
+						if(res.status=='200'){
+							$('.success').fadeIn();
+							$('.bigpic').fadeIn();
+						}
+					})
+					.catch(err => {
+						console.error(err);
+					})
+				},2000),
+
+			},
+
+		})
+	</script>
+
+	</body>
+</html>
